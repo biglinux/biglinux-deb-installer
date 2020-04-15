@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#Install .deb packages
+#           
+#Author Bruno Goncalves  <www.biglinux.com.br>
+#License: GPLv2 or later                       
+#################################################
+
+
+export BIGLINUX_DEB_INSTALLER_PID="$$"
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-deb-installer
+
+echo '<head><meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="theme.css">
+</head><body>'
+
+echo '<title>' $"Instalar arquivos .deb" '</title>'
+echo '<div id=page2>'
+echo '<div id="middle" class="bar">'
+echo '<div id=loading>'
+echo $"Carregando..."
+echo '</div>'
+echo '</body>'
+echo '<META http-equiv="refresh" content="1;URL=index2.sh.htm">'

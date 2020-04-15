@@ -1,0 +1,86 @@
+#!/bin/bash
+
+#Install .deb packages
+#           
+#Author Bruno Goncalves  <www.biglinux.com.br>
+#License: GPLv2 or later                       
+#################################################
+
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-deb-installer
+
+# Don't group windows
+xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+  echo '
+  <body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
+    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
+    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
+  </head>'
+  
+
+echo '<style>
+div#textApt {
+    height: 50%;
+}
+</style>'
+  
+
+echo '<title>' $"Instalar arquivos .deb" '</title>'
+
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+
+
+echo '<div id=page2>'
+
+echo '<div id="middle" class="bar">'
+
+echo '<div id=top>'
+echo $"Problemas detectados."
+echo '</div>'
+
+echo $"A instalação de novos pacotes não pode prosseguir, existem pacotes conflitantes instalados."
+
+echo $"Confira a solução apresentada abaixo e decida se devo aplicá-la."
+
+echo "<div id=textApt>"
+echo '<textarea style="height:100%;">'
+
+cat << EOF
+
+    $(apt -sf install | sed '/^Remv /d;/^Inst .*/d;/^Conf .*/d;/\.\.\.$/d;/\.\.\. [A-Z]/d' | sed '/following additional packages will be installed/,/^\S/{//!d}' | sed '/following additional packages will be installed/d')
+    
+EOF
+
+echo "</textarea>"
+echo "</div>"
+
+echo '<div id=buttonSpace></div>'
+echo '<div id=buttonBar>'
+echo '<a href="/usr/share/bigbashview/close.sh" class="waves-effect waves-light btn"><i class="material-icons left"><img src=cancel.png></i>' $"Cancelar" '</a>'
+
+echo '<a href="broken_solve.sh.htm" class="waves-effect waves-light btn"><i class="material-icons left"><img src=ok.png></i>' $"Aplicar solução sugerida" '</a>'
+
+
+echo '</div>'
+
+
+echo "</div></div>"
+
+
+echo '</h1></div>'
+echo '</div></div>'

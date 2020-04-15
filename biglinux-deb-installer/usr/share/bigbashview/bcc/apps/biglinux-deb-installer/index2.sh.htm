@@ -1,0 +1,186 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-deb-installer
+
+# Don't group windows
+xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+  echo '
+  <body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
+    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
+    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
+  </head>'
+  echo '<title>' $"Instalar arquivos .deb" '</title>'
+
+
+
+
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+
+
+OIFS=$IFS
+IFS=$'\n'
+LC_ALL=C apt -s install $(cat /tmp/biglinux-deb-installer-list) > /tmp/packages_info_big.txt
+LC_ALL=C apt --print-uris install $(cat /tmp/biglinux-deb-installer-list) > /tmp/packages_info_big_uri.txt
+IFS=$OIFS
+
+# Verify is broken
+if [ "$(grep "\-\-fix-broken install" /tmp/packages_info_big.txt)" != "" ]; then
+    echo '<div id=broken>' $"Aguarde um momento..." '</div>'
+    echo '<META http-equiv="refresh" content="1;URL=broken.sh.htm">'
+    exit 0
+fi
+
+INSTALL_BUTTON="0"
+
+MSG_DEPENDS_BROKEN=$"Pacotes com dependências não atendidas: "
+
+MSG_DEPENDS=$"Depende de "
+
+MSG_DEPENDS_NOT_INSTALL=$" mas não vai ser instalado."
+
+MSG_NOT_INSTALLABLE=$"mas não está disponível"
+
+# Show local packages to install
+LOCAL_PACKAGES_TO_INSTALL="$(grep " local-deb \["  /tmp/packages_info_big.txt | grep "^Inst" | cut -f2,3 -d" " | sed 's| (| - |g;s|$|<br>|g')"
+
+# Show packages to install
+ADDITIONAL_PACKAGES_TO_INSTALL=$(sed -n '/following additional packages will be installed:/,/^\S/p' /tmp/packages_info_big.txt | grep "^  "| sed ':a;N;$!ba;s/\n/ /g;s|   | |g;s|  | |g;s|-|\&#8209;|g')
+
+
+VERIFY_INSTALLED="$(grep "is already the newest version" /tmp/packages_info_big.txt)"
+
+
+# Show packages to remove
+PACKAGES_TO_REMOVE=$(sed -n '/following packages will be REMOVED:/,/^\S/p' /tmp/packages_info_big.txt | grep "^  "| sed ':a;N;$!ba;s/\n/ /g;s|   | |g;s|  | |g;s|-|\&#8209;|g')
+
+# Show packages to upgrade
+PACKAGES_TO_UPGRADE=$(sed -n '/following packages will be upgraded:/,/^\S/p' /tmp/packages_info_big.txt | grep "^  "| sed ':a;N;$!ba;s/\n/ /g;s|   | |g;s|  | |g;s|-|\&#8209;|g')
+
+IMPOSSIBLE="$(grep "requested an impossible situation" /tmp/packages_info_big.txt)"
+
+VALID_DEB="$(grep "Reading state information" /tmp/packages_info_big.txt)"
+
+# Show download  size needed
+DOWNLOAD_SIZE="$(grep "Need to get" /tmp/packages_info_big_uri.txt | sed 's|Need to get ||g;s| of.*||g;s|/.*||g')"
+
+NUMBER_UPGRADED_PACKAGES="$(grep -i "newly installed" /tmp/packages_info_big_uri.txt | cut -f1 -d" ")"
+
+NUMBER_NEW_PACKAGES="$(grep -i "newly installed" /tmp/packages_info_big_uri.txt | cut -f3 -d" ")"
+
+NUMBER_REMOVE_PACKAGES="$(grep -i "newly installed" /tmp/packages_info_big_uri.txt | cut -f6 -d" ")"
+
+echo '<div id=page2>'
+
+echo '<div id="middle" class="bar">'
+
+echo '<div id=top>'
+echo $"Instalar arquivos .deb"
+echo '</div>'
+
+if [ "$IMPOSSIBLE" != "" ]; then
+    echo $"Não é possível prosseguir com a instalação.<br><br>"
+    
+    grep -A 200 "following information may help to resolve the situation" /tmp/packages_info_big.txt | grep -v "following information may help to resolve the situation" | sed "s|The following packages have unmet dependencies:|$MSG_DEPENDS_BROKEN<br>|g;s|Depends|$MSG_DEPENDS|g;s|but it is not going to be installed|$MSG_DEPENDS_NOT_INSTALL<br>|g;s|but it is not installable|$MSG_NOT_INSTALLABLE<br>|"
+    
+    exit 0
+fi
+
+if [ "$VALID_DEB" = "" ]; then
+    echo $"Selecione um pacote .deb válido.<br><br>"
+    
+    exit 0
+fi
+
+
+if [ "$VERIFY_INSTALLED" != "" ]; then
+    echo "Um ou mais pacotes já estavam instalados:<br> $(echo "$VERIFY_INSTALLED" | grep "is already the newest version" | sed 's| .*(| - |g;s|).|<br>|g')"
+    echo "<br>"
+    REINSTALL_BUTTON="1"
+fi
+
+
+if [ "$LOCAL_PACKAGES_TO_INSTALL" != "" ]; then
+    echo "Pacotes selecionados para instalar:<br><div id=local_packages_to_install> $LOCAL_PACKAGES_TO_INSTALL</div>"
+    echo "<br>"
+    INSTALL_BUTTON="1"
+fi
+
+if [ "$DOWNLOAD_SIZE" != "0 B" ] && [ "$DOWNLOAD_SIZE" != "" ]; then
+    echo "<div id=oneline>É preciso fazer o download de<div id=download_size> $DOWNLOAD_SIZE</div></div>"
+    echo "<br><br>"
+fi
+
+if [ "$NUMBER_NEW_PACKAGES" != "0" ]; then
+    echo "<div id=oneline>Total de pacotes para instalar:<div id=number_new_packages> $NUMBER_NEW_PACKAGES</div></div>"
+    echo "<br><br>"
+    INSTALL_BUTTON="1"
+fi
+
+
+if [ "$NUMBER_REMOVE_PACKAGES" != "0" ]; then
+    echo "<div id=oneline>Total de pacotes a remover:<div id=number_remove_packages> $NUMBER_REMOVE_PACKAGES</div></div>"
+    echo "<br><br>"
+fi
+
+if [ "$NUMBER_UPGRADED_PACKAGES" != "0" ]; then
+    echo "<div id=oneline>Pacotes a atualizar:<div id=number_upgraded_packages> $NUMBER_UPGRADED_PACKAGES</div></div>"
+    echo "<br><br>"
+    INSTALL_BUTTON="1"
+fi
+
+if [ "$ADDITIONAL_PACKAGES_TO_INSTALL" != "" ]; then
+    echo "Dependencias a serem instaladas:<br><div id=additional_packages_to_install> $ADDITIONAL_PACKAGES_TO_INSTALL</div>"
+    echo "<br>"
+    INSTALL_BUTTON="1"
+fi
+
+if [ "$PACKAGES_TO_REMOVE" != "" ]; then
+    echo "Pacotes a remover:<br><div id=packages_to_remove> $PACKAGES_TO_REMOVE</div>"
+    echo "<br>"
+fi
+
+if [ "$PACKAGES_TO_UPGRADE" != "" ]; then
+    echo "Pacotes para atualizar:<br><div id=packages_to_upgrade> $PACKAGES_TO_UPGRADE</div>"
+    echo "<br>"
+    INSTALL_BUTTON="1"
+fi
+
+
+
+
+echo '<div id=buttonSpace></div>'
+echo '<div id=buttonBar>'
+echo '<a href="/usr/share/bigbashview/close.sh" class="waves-effect waves-light btn"><i class="material-icons left"><img src=cancel.png></i>' $"Cancelar" '</a>'
+
+
+if [ "$INSTALL_BUTTON" = "1" ]; then
+    echo '<a href="install.sh.htm" class="waves-effect waves-light btn"><i class="material-icons left"><img src=ok.png></i>' $"Instalar" '</a>'
+else
+    if [ "$REINSTALL_BUTTON" = "1" ]; then
+        echo '<a href="install.sh.htm?reinstall=1" class="waves-effect waves-light btn"><i class="material-icons left"><img src=ok.png></i>' $"Reinstalar" '</a>'
+    fi
+fi
+
+echo '</div>'
+
+
+echo "</div></div>"
+
+
+echo '</h1></div>'
+echo '</div></div>'

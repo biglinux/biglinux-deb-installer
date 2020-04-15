@@ -1,0 +1,46 @@
+#!/bin/bash
+
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-deb-installer
+
+
+APT_LOCK="$(ps -p $(fuser /var/lib/dpkg/lock-frontend /var/lib/dpkg/lock /var/lib/apt/lists/lock 2>&1 | sed 's|.*: ||g' | grep -m1 [1-9]) -o comm= | cut -f1 -d.)"
+
+if [ "$(ps -aux | grep "/bin/bash /usr/bin/biglinux-deb-installer" | grep -cv " grep ")" -gt "2" ]; then
+
+    kdialog --msgbox $"Já existe uma janela do instalador aberta." --title $"Instalador de .deb"
+    exit 0
+
+fi
+
+if [ "$APT_LOCK" != "" ]; then
+
+    kdialog --msgbox $"O programa $APT_LOCK está utilizando o sistema
+de instalação de pacotes.
+
+Feche-o e tente novamente." --title $"Instalador de .deb"
+    exit 0
+
+fi
+
+
+
+OIFS=$IFS
+IFS=$'\n'
+
+
+rm -f /tmp/biglinux-deb-installer-list
+
+for i  in  $*; do
+    echo "$i" >> /tmp/biglinux-deb-installer-list
+done
+
+
+cd /usr/share/bigbashview/bcc/apps/biglinux-deb-installer/
+
+GDK_BACKEND=x11 SDL_VIDEODRIVER=x11 QT_QPA_PLARFORM=xcb bigbashview -t qt -b 0,0,0 index.sh.htm -s 1050x600 -i icon.png
+
+IFS=$OIFS
+

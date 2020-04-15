@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the biglinux-deb-installer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: biglinux-deb-installer\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2020-04-15 14:04-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Instalar pacotes .deb"
+msgstr  ""
+
+msgid   "A solução foi aplicada."
+msgstr  ""
+
+msgid   "Fechar"
+msgstr  ""
+
+msgid   "Instalar arquivos .deb"
+msgstr  ""
+
+msgid   "Aplicando a solução recomendada."
+msgstr  ""
+
+msgid   "Aguarde enquando as alterações estão sendo aplicadas."
+msgstr  ""
+
+msgid   "Ocasionalmente a tela abaixo pode requisitar alguma interação."
+msgstr  ""
+
+msgid   "Problemas detectados."
+msgstr  ""
+
+msgid   "A instalação de novos pacotes não pode prosseguir, existem pacotes "
+        "conflitantes instalados."
+msgstr  ""
+
+msgid   "Confira a solução apresentada abaixo e decida se devo aplicá-la."
+msgstr  ""
+
+msgid   "Cancelar"
+msgstr  ""
+
+msgid   "Aplicar solução sugerida"
+msgstr  ""
+
+msgid   "Carregando..."
+msgstr  ""
+
+msgid   "Aguarde um momento..."
+msgstr  ""
+
+msgid   "Pacotes com dependências não atendidas: "
+msgstr  ""
+
+msgid   "Depende de "
+msgstr  ""
+
+msgid   " mas não vai ser instalado."
+msgstr  ""
+
+msgid   "mas não está disponível"
+msgstr  ""
+
+msgid   "Não é possível prosseguir com a instalação.<br><br>"
+msgstr  ""
+
+msgid   "Selecione um pacote .deb válido.<br><br>"
+msgstr  ""
+
+msgid   "Instalar"
+msgstr  ""
+
+msgid   "Reinstalar"
+msgstr  ""
+
+msgid   "Aguarde, instalando..."
+msgstr  ""
+
+msgid   "Ocorreram erros, confira:"
+msgstr  ""
+
+msgid   "Atualizar a lista de pacotes (apt update)"
+msgstr  ""
+
+msgid   "Instalação concluída!"
+msgstr  ""
+
+msgid   "Aguarde, atualizando lista de pacotes..."
+msgstr  ""
+
+msgid   "Concluída a atualização de lista de pacotes, tente novamente "
+        "instalar o pacote desejado."
+msgstr  ""
+
+msgid   "Já existe uma janela do instalador aberta."
+msgstr  ""
+
+msgid   "Instalador de .deb"
+msgstr  ""
+
+msgid   "O programa $APT_LOCK está utilizando o sistema\n"
+        "de instalação de pacotes.\n"
+        "\n"
+        "Feche-o e tente novamente."
+msgstr  ""
