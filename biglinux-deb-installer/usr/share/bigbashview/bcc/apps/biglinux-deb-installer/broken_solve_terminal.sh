@@ -11,4 +11,6 @@ PID_BIG_DEB_INSTALLER="$$" WINDOW_ID="$WINDOW_ID" ./broken_solve_terminal_resize
 
 apt -y -f install
 
+dpkg --configure -a
+
 
