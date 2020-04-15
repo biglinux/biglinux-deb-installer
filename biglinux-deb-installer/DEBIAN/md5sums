@@ -1,10 +1,10 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-094ba6c31bbcd996b4edf86cff4e0052  DEBIAN/control
 4edec0c5a7f36ef8cb6def0193915f0f  DEBIAN/languages
 b7bb59bdd21d9c08dcfdc86f1256c315  DEBIAN/biglinux-deb-installer.pot
 3b9c8462b456b7eae2335d7b7c73c3f8  DEBIAN/pt.po
 3b9c8462b456b7eae2335d7b7c73c3f8  DEBIAN/es.po
 3b9c8462b456b7eae2335d7b7c73c3f8  DEBIAN/en.po
+06ed625563178b91b50fd91eb8f43b80  DEBIAN/control
 8dbd213e2f08ed8dc33c97d968ad2e83  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_apply.sh.htm
 004ebae39685ce031fd9d25fc8723d2c  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_terminal.sh
 099ce4a11c0ac8dc105f85f5e7c7aab4  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve.sh.htm
