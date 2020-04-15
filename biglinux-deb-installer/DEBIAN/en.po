@@ -8,108 +8,113 @@ msgstr ""
 "Project-Id-Version: biglinux-deb-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-15 14:04-0300\n"
-"PO-Revision-Date: 2020-04-15 14:04-0300\n"
+"PO-Revision-Date: 2020-04-15 15:10-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: pt\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Instalar pacotes .deb"
-msgstr ""
+msgstr "Install .deb packages"
 
 msgid "A solução foi aplicada."
-msgstr ""
+msgstr "The solution was applied."
 
 msgid "Fechar"
-msgstr ""
+msgstr "Close"
 
 msgid "Instalar arquivos .deb"
-msgstr ""
+msgstr "Install .deb files"
 
 msgid "Aplicando a solução recomendada."
-msgstr ""
+msgstr "Applying the recommended solution."
 
 msgid "Aguarde enquando as alterações estão sendo aplicadas."
-msgstr ""
+msgstr "Wait while the changes are being applied."
 
 msgid "Ocasionalmente a tela abaixo pode requisitar alguma interação."
-msgstr ""
+msgstr "Occasionally the screen below may require some interaction."
 
 msgid "Problemas detectados."
-msgstr ""
+msgstr "Problems detected."
 
 msgid ""
-"A instalação de novos pacotes não pode prosseguir, existem pacotes "
+"A instalação de novos pacotes não pode prosseguir porque existem pacotes "
 "conflitantes instalados."
 msgstr ""
+"The installation of new packages can not proceed because there's "
+"conflicting packages installed."
 
 msgid "Confira a solução apresentada abaixo e decida se devo aplicá-la."
-msgstr ""
+msgstr "Check the presented solution below and decide if I must apply it."
 
 msgid "Cancelar"
-msgstr ""
+msgstr "Cancel"
 
 msgid "Aplicar solução sugerida"
-msgstr ""
+msgstr "Apply suggested solution"
 
 msgid "Carregando..."
-msgstr ""
+msgstr "Loading..."
 
 msgid "Aguarde um momento..."
-msgstr ""
+msgstr "Wait a moment..."
 
 msgid "Pacotes com dependências não atendidas: "
-msgstr ""
+msgstr "Packages with non attended dependencies:"
 
 msgid "Depende de "
-msgstr ""
+msgstr "Depends on"
 
-msgid " mas não vai ser instalado."
-msgstr ""
+msgid "mas, não vai ser instalado."
+msgstr "but, it won't be installed."
 
-msgid "mas não está disponível"
-msgstr ""
+msgid "mas, não está disponível"
+msgstr "but, it isn't available."
 
 msgid "Não é possível prosseguir com a instalação.<br><br>"
-msgstr ""
+msgstr "It's not possible to proceed with the installation.<br><br>"
 
 msgid "Selecione um pacote .deb válido.<br><br>"
-msgstr ""
+msgstr "Select a valid .deb package. <br><br>"
 
 msgid "Instalar"
-msgstr ""
+msgstr "Install"
 
 msgid "Reinstalar"
-msgstr ""
+msgstr "Reinstall"
 
-msgid "Aguarde, instalando..."
-msgstr ""
+msgid "Aguarde. Instalando..."
+msgstr "Wait. Installing..."
 
-msgid "Ocorreram erros, confira:"
-msgstr ""
+msgid "Ocorreram erros. Confira:"
+msgstr "Errors occurred. Check them out:"
 
 msgid "Atualizar a lista de pacotes (apt update)"
-msgstr ""
+msgstr "Update the package list (apt update)"
 
 msgid "Instalação concluída!"
-msgstr ""
+msgstr "Installation finished!"
 
-msgid "Aguarde, atualizando lista de pacotes..."
-msgstr ""
+msgid "Aguarde. Atualizando lista de pacotes..."
+msgstr "Wait. Updating the package list..."
 
 msgid ""
-"Concluída a atualização de lista de pacotes, tente novamente instalar o "
+"Concluída a atualização de lista de pacotes. Tente novamente instalar o "
 "pacote desejado."
 msgstr ""
+"The package list updating was concluded. Try to install the desired "
+"package again."
 
 msgid "Já existe uma janela do instalador aberta."
-msgstr ""
+msgstr "There's an installer windows open already."
 
 msgid "Instalador de .deb"
-msgstr ""
+msgstr ".deb installer"
 
 msgid ""
 "O programa $APT_LOCK está utilizando o sistema\n"
@@ -117,3 +122,7 @@ msgid ""
 "\n"
 "Feche-o e tente novamente."
 msgstr ""
+"The $APT_LOCK program is using the package\n"
+"installation system.\n"
+"\n"
+"Close it and try again."
