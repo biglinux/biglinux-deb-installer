@@ -108,54 +108,54 @@ fi
 
 
 if [ "$VERIFY_INSTALLED" != "" ]; then
-    echo "Um ou mais pacotes já estavam instalados:<br> $(echo "$VERIFY_INSTALLED" | grep "is already the newest version" | sed 's| .*(| - |g;s|).|<br>|g')"
+    echo $"Um ou mais pacotes já estavam instalados:" "<br> $(echo "$VERIFY_INSTALLED" | grep "is already the newest version" | sed 's| .*(| - |g;s|).|<br>|g')"
     echo "<br>"
     REINSTALL_BUTTON="1"
 fi
 
 
 if [ "$LOCAL_PACKAGES_TO_INSTALL" != "" ]; then
-    echo "Pacotes selecionados para instalar:<br><div id=local_packages_to_install> $LOCAL_PACKAGES_TO_INSTALL</div>"
+    echo $"Pacotes selecionados para instalar:" "<br><div id=local_packages_to_install> $LOCAL_PACKAGES_TO_INSTALL</div>"
     echo "<br>"
     INSTALL_BUTTON="1"
 fi
 
 if [ "$DOWNLOAD_SIZE" != "0 B" ] && [ "$DOWNLOAD_SIZE" != "" ]; then
-    echo "<div id=oneline>É preciso fazer o download de<div id=download_size> $DOWNLOAD_SIZE</div></div>"
+    echo "<div id=oneline>" $"É preciso fazer o download de" "<div id=download_size> $DOWNLOAD_SIZE</div></div>"
     echo "<br><br>"
 fi
 
 if [ "$NUMBER_NEW_PACKAGES" != "0" ]; then
-    echo "<div id=oneline>Total de pacotes para instalar:<div id=number_new_packages> $NUMBER_NEW_PACKAGES</div></div>"
+    echo "<div id=oneline>" $"Total de pacotes para instalar:" "<div id=number_new_packages> $NUMBER_NEW_PACKAGES</div></div>"
     echo "<br><br>"
     INSTALL_BUTTON="1"
 fi
 
 
 if [ "$NUMBER_REMOVE_PACKAGES" != "0" ]; then
-    echo "<div id=oneline>Total de pacotes a remover:<div id=number_remove_packages> $NUMBER_REMOVE_PACKAGES</div></div>"
+    echo "<div id=oneline>" $"Total de pacotes a remover:" "<div id=number_remove_packages> $NUMBER_REMOVE_PACKAGES</div></div>"
     echo "<br><br>"
 fi
 
 if [ "$NUMBER_UPGRADED_PACKAGES" != "0" ]; then
-    echo "<div id=oneline>Pacotes a atualizar:<div id=number_upgraded_packages> $NUMBER_UPGRADED_PACKAGES</div></div>"
+    echo "<div id=oneline>" $"Pacotes a atualizar:" "<div id=number_upgraded_packages> $NUMBER_UPGRADED_PACKAGES</div></div>"
     echo "<br><br>"
     INSTALL_BUTTON="1"
 fi
 
 if [ "$ADDITIONAL_PACKAGES_TO_INSTALL" != "" ]; then
-    echo "Dependencias a serem instaladas:<br><div id=additional_packages_to_install> $ADDITIONAL_PACKAGES_TO_INSTALL</div>"
+    echo $"Dependencias a serem instaladas:" "<br><div id=additional_packages_to_install> $ADDITIONAL_PACKAGES_TO_INSTALL</div>"
     echo "<br>"
     INSTALL_BUTTON="1"
 fi
 
 if [ "$PACKAGES_TO_REMOVE" != "" ]; then
-    echo "Pacotes a remover:<br><div id=packages_to_remove> $PACKAGES_TO_REMOVE</div>"
+    echo $"Pacotes a remover:" "<br><div id=packages_to_remove> $PACKAGES_TO_REMOVE</div>"
     echo "<br>"
 fi
 
 if [ "$PACKAGES_TO_UPGRADE" != "" ]; then
-    echo "Pacotes para atualizar:<br><div id=packages_to_upgrade> $PACKAGES_TO_UPGRADE</div>"
+    echo $"Pacotes para atualizar:" "<br><div id=packages_to_upgrade> $PACKAGES_TO_UPGRADE</div>"
     echo "<br>"
     INSTALL_BUTTON="1"
 fi

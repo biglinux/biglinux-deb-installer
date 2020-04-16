@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-deb-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-15 14:04-0300\n"
+"POT-Creation-Date: 2020-04-15 21:02-0300\n"
 "PO-Revision-Date: 2020-04-15 14:04-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -42,7 +42,7 @@ msgid "Problemas detectados."
 msgstr ""
 
 msgid ""
-"A instalação de novos pacotes não pode prosseguir, existem pacotes "
+"A instalação de novos pacotes não pode prosseguir porque existem pacotes "
 "conflitantes instalados."
 msgstr ""
 
@@ -67,10 +67,10 @@ msgstr ""
 msgid "Depende de "
 msgstr ""
 
-msgid " mas não vai ser instalado."
+msgid "mas, não vai ser instalado."
 msgstr ""
 
-msgid "mas não está disponível"
+msgid "mas, não está disponível"
 msgstr ""
 
 msgid "Não é possível prosseguir com a instalação.<br><br>"
@@ -79,16 +79,43 @@ msgstr ""
 msgid "Selecione um pacote .deb válido.<br><br>"
 msgstr ""
 
+msgid "Um ou mais pacotes já estavam instalados:"
+msgstr ""
+
+msgid "Pacotes selecionados para instalar:"
+msgstr ""
+
+msgid "É preciso fazer o download de"
+msgstr ""
+
+msgid "Total de pacotes para instalar:"
+msgstr ""
+
+msgid "Total de pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes a atualizar:"
+msgstr ""
+
+msgid "Dependencias a serem instaladas:"
+msgstr ""
+
+msgid "Pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes para atualizar:"
+msgstr ""
+
 msgid "Instalar"
 msgstr ""
 
 msgid "Reinstalar"
 msgstr ""
 
-msgid "Aguarde, instalando..."
+msgid "Aguarde. Instalando..."
 msgstr ""
 
-msgid "Ocorreram erros, confira:"
+msgid "Ocorreram erros. Confira:"
 msgstr ""
 
 msgid "Atualizar a lista de pacotes (apt update)"
@@ -97,11 +124,11 @@ msgstr ""
 msgid "Instalação concluída!"
 msgstr ""
 
-msgid "Aguarde, atualizando lista de pacotes..."
+msgid "Aguarde. Atualizando lista de pacotes..."
 msgstr ""
 
 msgid ""
-"Concluída a atualização de lista de pacotes, tente novamente instalar o "
+"Concluída a atualização de lista de pacotes. Tente novamente instalar o "
 "pacote desejado."
 msgstr ""
 

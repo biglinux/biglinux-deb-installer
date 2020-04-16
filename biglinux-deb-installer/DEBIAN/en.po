@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-deb-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-15 14:04-0300\n"
+"POT-Creation-Date: 2020-04-15 21:02-0300\n"
 "PO-Revision-Date: 2020-04-15 15:10-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -46,8 +46,8 @@ msgid ""
 "A instalação de novos pacotes não pode prosseguir porque existem pacotes "
 "conflitantes instalados."
 msgstr ""
-"The installation of new packages can not proceed because there's "
-"conflicting packages installed."
+"The installation of new packages can not proceed because there's conflicting "
+"packages installed."
 
 msgid "Confira a solução apresentada abaixo e decida se devo aplicá-la."
 msgstr "Check the presented solution below and decide if I must apply it."
@@ -82,6 +82,33 @@ msgstr "It's not possible to proceed with the installation.<br><br>"
 msgid "Selecione um pacote .deb válido.<br><br>"
 msgstr "Select a valid .deb package. <br><br>"
 
+msgid "Um ou mais pacotes já estavam instalados:"
+msgstr ""
+
+msgid "Pacotes selecionados para instalar:"
+msgstr ""
+
+msgid "É preciso fazer o download de"
+msgstr ""
+
+msgid "Total de pacotes para instalar:"
+msgstr ""
+
+msgid "Total de pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes a atualizar:"
+msgstr ""
+
+msgid "Dependencias a serem instaladas:"
+msgstr ""
+
+msgid "Pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes para atualizar:"
+msgstr ""
+
 msgid "Instalar"
 msgstr "Install"
 
@@ -107,8 +134,8 @@ msgid ""
 "Concluída a atualização de lista de pacotes. Tente novamente instalar o "
 "pacote desejado."
 msgstr ""
-"The package list updating was concluded. Try to install the desired "
-"package again."
+"The package list updating was concluded. Try to install the desired package "
+"again."
 
 msgid "Já existe uma janela do instalador aberta."
 msgstr "There's an installer windows open already."
