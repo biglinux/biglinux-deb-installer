@@ -80,34 +80,34 @@ msgid "Não é possível prosseguir com a instalação.<br><br>"
 msgstr "It's not possible to proceed with the installation.<br><br>"
 
 msgid "Selecione um pacote .deb válido.<br><br>"
-msgstr "Select a valid .deb package. <br><br>"
+msgstr "Select a valid .deb package.<br><br>"
 
 msgid "Um ou mais pacotes já estavam instalados:"
-msgstr ""
+msgstr "One or more packages were already installed:"
 
 msgid "Pacotes selecionados para instalar:"
-msgstr ""
+msgstr "Selected packages for install:"
 
 msgid "É preciso fazer o download de"
-msgstr ""
+msgstr "It's needed to download"
 
 msgid "Total de pacotes para instalar:"
-msgstr ""
+msgstr "Total of packages for install:"
 
 msgid "Total de pacotes a remover:"
-msgstr ""
+msgstr "Total of packages for removal:"
 
 msgid "Pacotes a atualizar:"
-msgstr ""
+msgstr "Packages for update:"
 
 msgid "Dependencias a serem instaladas:"
-msgstr ""
+msgstr "Dependencies to be installed:"
 
 msgid "Pacotes a remover:"
-msgstr ""
+msgstr "Packages for removal:"
 
 msgid "Pacotes para atualizar:"
-msgstr ""
+msgstr "Packages for update:"
 
 msgid "Instalar"
 msgstr "Install"
@@ -138,7 +138,7 @@ msgstr ""
 "again."
 
 msgid "Já existe uma janela do instalador aberta."
-msgstr "There's an installer windows open already."
+msgstr "There's an open installer windows already."
 
 msgid "Instalador de .deb"
 msgstr ".deb installer"
