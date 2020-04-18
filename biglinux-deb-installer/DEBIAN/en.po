@@ -70,11 +70,11 @@ msgstr "Packages with non attended dependencies:"
 msgid "Depende de "
 msgstr "Depends on"
 
-msgid "mas, não vai ser instalado."
-msgstr "but, it won't be installed."
+msgid "mas não vai ser instalado."
+msgstr "but it won't be installed."
 
-msgid "mas, não está disponível"
-msgstr "but, it isn't available."
+msgid "mas não está disponível"
+msgstr "but it isn't available."
 
 msgid "Não é possível prosseguir com a instalação.<br><br>"
 msgstr "It's not possible to proceed with the installation.<br><br>"
