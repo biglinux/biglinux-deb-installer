@@ -3,8 +3,8 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 1f96e005fc4cdf023f2dc4a8757882dc  DEBIAN/pt.po
 1f96e005fc4cdf023f2dc4a8757882dc  DEBIAN/es.po
 37b49c009ce6fa024dc35e34103f38e3  DEBIAN/biglinux-deb-installer.pot
-0500d2f3688f5bfe541d42566efc22e3  DEBIAN/control
 4140381f981670d6c2bf33a5c380a18b  DEBIAN/en.po
+14adb716b1944f6f0aab1a259c6bb349  DEBIAN/control
 8dbd213e2f08ed8dc33c97d968ad2e83  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_apply.sh.htm
 f7be1cd5eb35360f6ede73f057bdee60  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_terminal.sh
 099ce4a11c0ac8dc105f85f5e7c7aab4  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve.sh.htm
@@ -13,7 +13,6 @@ f7be1cd5eb35360f6ede73f057bdee60  usr/share/bigbashview/bcc/apps/biglinux-deb-in
 11866e7699aebb2f9ebd066203b2a72d  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/icon.png
 39de9b56c82aae57f91ecfbec6814fa3  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/index.sh.htm
 c42acac4a22bfa1445cba8553770bc5e  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/index2.sh.htm
-ca2f03008fa9df475352c90f8a67d90c  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/install_terminal.sh
 99a6a430e574d768df40e676da83d73a  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/install.sh.htm
 6e44f4191105c3e6cd203e2c045f356f  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/install2.sh.htm
 c30cd977ccb0d1eca5aeb970fef5b003  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/ok.png
@@ -23,8 +22,9 @@ c5927d2a86f2ba728c5b181c60579902  usr/share/bigbashview/bcc/apps/biglinux-deb-in
 ea2104de67589ee38a6ed9136b1be2a3  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/update2.sh.htm
 b93ccd205c02bb0eff81a7ffca3b39bd  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_terminal_resize.sh
 b93ccd205c02bb0eff81a7ffca3b39bd  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/install_terminal_resize.sh
+45ea991c3054bf52d22f14d1faabe4a0  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/install_terminal.sh
 02b7484ed4bb75fabd10a655273ed856  usr/share/applications/biglinux-deb-installer.desktop
 c18218ee6ce8104d6e5b52eff464b832  usr/share/locale/pt/LC_MESSAGES/biglinux-deb-installer.mo
 c18218ee6ce8104d6e5b52eff464b832  usr/share/locale/es/LC_MESSAGES/biglinux-deb-installer.mo
 287e450b96120cec6542a42a0d88d77a  usr/share/locale/en/LC_MESSAGES/biglinux-deb-installer.mo
-d233e3b8f0c4eed093734666ae470590  usr/bin/biglinux-deb-installer
+7e597dcf402ea9fe5fd65b0b193f2209  usr/bin/biglinux-deb-installer
