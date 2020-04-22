@@ -17,7 +17,7 @@ rm -f /tmp/biglinux-deb-installer-error
 if [ "$APT_UPDATE" = "1" ]; then
     apt update
 else
-    apt -y install $REINSTALL $(cat /tmp/biglinux-deb-installer-list) 2> >(tee /tmp/biglinux-deb-installer-error)
+    apt --allow-downgrades -y install $REINSTALL $(cat /tmp/biglinux-deb-installer-list) 2> >(tee /tmp/biglinux-deb-installer-error)
 fi
 
 if [ "$(xwininfo -id $WINDOW_ID 2>&1 | grep -i "No such window")" != "" ]; then

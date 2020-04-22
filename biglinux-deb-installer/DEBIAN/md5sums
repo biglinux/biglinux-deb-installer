@@ -2,9 +2,9 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 4edec0c5a7f36ef8cb6def0193915f0f  DEBIAN/languages
 1f96e005fc4cdf023f2dc4a8757882dc  DEBIAN/pt.po
 1f96e005fc4cdf023f2dc4a8757882dc  DEBIAN/es.po
-64cd8928a3f01ae85cd0b4ea29170545  DEBIAN/en.po
-e520fed445c35acd2197173a1b6d0cc7  DEBIAN/control
 37b49c009ce6fa024dc35e34103f38e3  DEBIAN/biglinux-deb-installer.pot
+0500d2f3688f5bfe541d42566efc22e3  DEBIAN/control
+4140381f981670d6c2bf33a5c380a18b  DEBIAN/en.po
 8dbd213e2f08ed8dc33c97d968ad2e83  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_apply.sh.htm
 f7be1cd5eb35360f6ede73f057bdee60  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve_terminal.sh
 099ce4a11c0ac8dc105f85f5e7c7aab4  usr/share/bigbashview/bcc/apps/biglinux-deb-installer/broken_solve.sh.htm
@@ -26,5 +26,5 @@ b93ccd205c02bb0eff81a7ffca3b39bd  usr/share/bigbashview/bcc/apps/biglinux-deb-in
 02b7484ed4bb75fabd10a655273ed856  usr/share/applications/biglinux-deb-installer.desktop
 c18218ee6ce8104d6e5b52eff464b832  usr/share/locale/pt/LC_MESSAGES/biglinux-deb-installer.mo
 c18218ee6ce8104d6e5b52eff464b832  usr/share/locale/es/LC_MESSAGES/biglinux-deb-installer.mo
-e4df6bd9503e3588b12aa9474facadb1  usr/share/locale/en/LC_MESSAGES/biglinux-deb-installer.mo
+287e450b96120cec6542a42a0d88d77a  usr/share/locale/en/LC_MESSAGES/biglinux-deb-installer.mo
 d233e3b8f0c4eed093734666ae470590  usr/bin/biglinux-deb-installer

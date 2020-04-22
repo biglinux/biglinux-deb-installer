@@ -37,6 +37,8 @@ for i  in  $*; do
     echo "$i" >> /tmp/biglinux-deb-installer-list
 done
 
+rm -f /tmp/packages_info_big.txt
+rm -f /tmp/packages_info_big_uri.txt
 
 cd /usr/share/bigbashview/bcc/apps/biglinux-deb-installer/
 
