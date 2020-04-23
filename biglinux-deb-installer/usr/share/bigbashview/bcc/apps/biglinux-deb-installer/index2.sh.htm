@@ -51,9 +51,9 @@ MSG_DEPENDS_BROKEN=$"Pacotes com dependências não atendidas: "
 
 MSG_DEPENDS=$"Depende de "
 
-MSG_DEPENDS_NOT_INSTALL=$"mas, não vai ser instalado."
+MSG_DEPENDS_NOT_INSTALL=$"mas não vai ser instalado."
 
-MSG_NOT_INSTALLABLE=$"mas, não está disponível"
+MSG_NOT_INSTALLABLE=$"mas não está disponível"
 
 # Show local packages to install
 LOCAL_PACKAGES_TO_INSTALL="$(grep " local-deb \["  /tmp/packages_info_big.txt | grep "^Inst" | cut -f2,3 -d" " | sed 's| (| - |g;s|$|<br>|g')"

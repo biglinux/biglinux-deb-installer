@@ -7,7 +7,7 @@
 msgid   ""
 msgstr  "Project-Id-Version: biglinux-deb-installer\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2020-04-15 21:02-0300\n"
+        "POT-Creation-Date: 2020-04-23 04:46-0300\n"
         "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,10 +65,10 @@ msgstr  ""
 msgid   "Depende de "
 msgstr  ""
 
-msgid   "mas, não vai ser instalado."
+msgid   "mas não vai ser instalado."
 msgstr  ""
 
-msgid   "mas, não está disponível"
+msgid   "mas não está disponível"
 msgstr  ""
 
 msgid   "Não é possível prosseguir com a instalação.<br><br>"
