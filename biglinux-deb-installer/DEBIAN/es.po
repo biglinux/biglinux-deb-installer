@@ -7,136 +7,118 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-deb-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 04:46-0300\n"
-"PO-Revision-Date: 2020-04-15 14:04-0300\n"
+"POT-Creation-Date: 2020-04-15 14:04-0300\n"
+"PO-Revision-Date: 2020-05-09 23:52-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: pt\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
 
 msgid "Instalar pacotes .deb"
-msgstr ""
+msgstr "Instalar paquetes .deb"
 
 msgid "A solução foi aplicada."
-msgstr ""
+msgstr "La solución fue aplicada."
 
 msgid "Fechar"
-msgstr ""
+msgstr "Cerrar"
 
 msgid "Instalar arquivos .deb"
-msgstr ""
+msgstr "Instalar archivos .deb"
 
 msgid "Aplicando a solução recomendada."
-msgstr ""
+msgstr "Aplicando la solución recomendada."
 
 msgid "Aguarde enquando as alterações estão sendo aplicadas."
-msgstr ""
+msgstr "Espere mientras se aplican los cambios."
 
 msgid "Ocasionalmente a tela abaixo pode requisitar alguma interação."
 msgstr ""
+"Ocasionalmente, la pantalla a continuación puede requerir cierta "
+"interacción."
 
 msgid "Problemas detectados."
-msgstr ""
+msgstr "Problemas detectados"
 
 msgid ""
-"A instalação de novos pacotes não pode prosseguir porque existem pacotes "
+"A instalação de novos pacotes não pode prosseguir, existem pacotes "
 "conflitantes instalados."
 msgstr ""
+"La instalación de nuevos paquetes no puede continuar, hay paquetes "
+"conflictivos instalados."
 
 msgid "Confira a solução apresentada abaixo e decida se devo aplicá-la."
 msgstr ""
+"Verifique la solución presentada a continuación y decida si debo "
+"aplicarla."
 
 msgid "Cancelar"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "Aplicar solução sugerida"
-msgstr ""
+msgstr "Aplicar la solución sugerida"
 
 msgid "Carregando..."
-msgstr ""
+msgstr "Cargando"
 
 msgid "Aguarde um momento..."
-msgstr ""
+msgstr "Espera un momento..."
 
 msgid "Pacotes com dependências não atendidas: "
-msgstr ""
+msgstr "Paquetes con dependencias insatisfechas:"
 
 msgid "Depende de "
-msgstr ""
+msgstr "Depende de "
 
-msgid "mas não vai ser instalado."
-msgstr ""
+msgid " mas não vai ser instalado."
+msgstr "pero no se instalará"
 
 msgid "mas não está disponível"
-msgstr ""
+msgstr "pero no está disponible"
 
 msgid "Não é possível prosseguir com a instalação.<br><br>"
-msgstr ""
+msgstr "No se puede continuar con la instalación. <br><br>"
 
 msgid "Selecione um pacote .deb válido.<br><br>"
-msgstr ""
-
-msgid "Um ou mais pacotes já estavam instalados:"
-msgstr ""
-
-msgid "Pacotes selecionados para instalar:"
-msgstr ""
-
-msgid "É preciso fazer o download de"
-msgstr ""
-
-msgid "Total de pacotes para instalar:"
-msgstr ""
-
-msgid "Total de pacotes a remover:"
-msgstr ""
-
-msgid "Pacotes a atualizar:"
-msgstr ""
-
-msgid "Dependencias a serem instaladas:"
-msgstr ""
-
-msgid "Pacotes a remover:"
-msgstr ""
-
-msgid "Pacotes para atualizar:"
-msgstr ""
+msgstr "Seleccione un paquete .deb válido.<br><br>"
 
 msgid "Instalar"
-msgstr ""
+msgstr "Instalar"
 
 msgid "Reinstalar"
-msgstr ""
+msgstr "Reinstalar"
 
-msgid "Aguarde. Instalando..."
-msgstr ""
+msgid "Aguarde, instalando..."
+msgstr "Espera, instalando..."
 
-msgid "Ocorreram erros. Confira:"
-msgstr ""
+msgid "Ocorreram erros, confira:"
+msgstr "Hubo errores, mira:"
 
 msgid "Atualizar a lista de pacotes (apt update)"
-msgstr ""
+msgstr "Actualice la lista de paquetes (apt update)"
 
 msgid "Instalação concluída!"
-msgstr ""
+msgstr "Instalación completa!"
 
-msgid "Aguarde. Atualizando lista de pacotes..."
-msgstr ""
+msgid "Aguarde, atualizando lista de pacotes..."
+msgstr "Por favor espere, actualizando la lista de paquetes ..."
 
 msgid ""
-"Concluída a atualização de lista de pacotes. Tente novamente instalar o "
+"Concluída a atualização de lista de pacotes, tente novamente instalar o "
 "pacote desejado."
 msgstr ""
+"Una vez completada la actualización de la lista de paquetes, intente "
+"instalar el paquete deseado nuevamente."
 
 msgid "Já existe uma janela do instalador aberta."
-msgstr ""
+msgstr "Ya hay una ventana de instalador abierta."
 
 msgid "Instalador de .deb"
-msgstr ""
+msgstr "Instalador de .deb"
 
 msgid ""
 "O programa $APT_LOCK está utilizando o sistema\n"
@@ -144,3 +126,7 @@ msgid ""
 "\n"
 "Feche-o e tente novamente."
 msgstr ""
+"El programa $APT_LOCK está usando el sistema\n"
+"de instalar paquetes.\n"
+"\n"
+"Ciérrelo e intente nuevamente."
