@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-deb-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-15 14:04-0300\n"
+"POT-Creation-Date: 2020-05-16 13:27-0300\n"
 "PO-Revision-Date: 2020-05-09 23:52-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -38,14 +38,14 @@ msgstr "Espere mientras se aplican los cambios."
 
 msgid "Ocasionalmente a tela abaixo pode requisitar alguma interação."
 msgstr ""
-"Ocasionalmente, la pantalla a continuación puede requerir cierta "
-"interacción."
+"Ocasionalmente, la pantalla a continuación puede requerir cierta interacción."
 
 msgid "Problemas detectados."
 msgstr "Problemas detectados"
 
+#, fuzzy
 msgid ""
-"A instalação de novos pacotes não pode prosseguir, existem pacotes "
+"A instalação de novos pacotes não pode prosseguir porque existem pacotes "
 "conflitantes instalados."
 msgstr ""
 "La instalación de nuevos paquetes no puede continuar, hay paquetes "
@@ -53,8 +53,7 @@ msgstr ""
 
 msgid "Confira a solução apresentada abaixo e decida se devo aplicá-la."
 msgstr ""
-"Verifique la solución presentada a continuación y decida si debo "
-"aplicarla."
+"Verifique la solución presentada a continuación y decida si debo aplicarla."
 
 msgid "Cancelar"
 msgstr "Cancelar"
@@ -74,7 +73,8 @@ msgstr "Paquetes con dependencias insatisfechas:"
 msgid "Depende de "
 msgstr "Depende de "
 
-msgid " mas não vai ser instalado."
+#, fuzzy
+msgid "mas não vai ser instalado."
 msgstr "pero no se instalará"
 
 msgid "mas não está disponível"
@@ -86,16 +86,45 @@ msgstr "No se puede continuar con la instalación. <br><br>"
 msgid "Selecione um pacote .deb válido.<br><br>"
 msgstr "Seleccione un paquete .deb válido.<br><br>"
 
+msgid "Um ou mais pacotes já estavam instalados:"
+msgstr ""
+
+msgid "Pacotes selecionados para instalar:"
+msgstr ""
+
+msgid "É preciso fazer o download de"
+msgstr ""
+
+msgid "Total de pacotes para instalar:"
+msgstr ""
+
+msgid "Total de pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes a atualizar:"
+msgstr ""
+
+msgid "Dependencias a serem instaladas:"
+msgstr ""
+
+msgid "Pacotes a remover:"
+msgstr ""
+
+msgid "Pacotes para atualizar:"
+msgstr ""
+
 msgid "Instalar"
 msgstr "Instalar"
 
 msgid "Reinstalar"
 msgstr "Reinstalar"
 
-msgid "Aguarde, instalando..."
+#, fuzzy
+msgid "Aguarde. Instalando..."
 msgstr "Espera, instalando..."
 
-msgid "Ocorreram erros, confira:"
+#, fuzzy
+msgid "Ocorreram erros. Confira:"
 msgstr "Hubo errores, mira:"
 
 msgid "Atualizar a lista de pacotes (apt update)"
@@ -104,11 +133,13 @@ msgstr "Actualice la lista de paquetes (apt update)"
 msgid "Instalação concluída!"
 msgstr "Instalación completa!"
 
-msgid "Aguarde, atualizando lista de pacotes..."
+#, fuzzy
+msgid "Aguarde. Atualizando lista de pacotes..."
 msgstr "Por favor espere, actualizando la lista de paquetes ..."
 
+#, fuzzy
 msgid ""
-"Concluída a atualização de lista de pacotes, tente novamente instalar o "
+"Concluída a atualização de lista de pacotes. Tente novamente instalar o "
 "pacote desejado."
 msgstr ""
 "Una vez completada la actualización de la lista de paquetes, intente "
