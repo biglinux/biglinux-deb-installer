@@ -1,5 +1,5 @@
 Package: biglinux-deb-installer
-Version: 1.0.0-1big8
+Version: 1.0.0-1big9
 Conflicts: deepin-deb-installer-tweaks, deepin-deb-installer
 Replaces: deepin-deb-installer-tweaks, deepin-deb-installer
 Depends: bigbashview, rxvt-unicode, kdialog, x11-utils, sed, xtermset
