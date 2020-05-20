@@ -43,7 +43,6 @@ msgstr ""
 msgid "Problemas detectados."
 msgstr "Problemas detectados"
 
-#, fuzzy
 msgid ""
 "A instalação de novos pacotes não pode prosseguir porque existem pacotes "
 "conflitantes instalados."
@@ -73,7 +72,6 @@ msgstr "Paquetes con dependencias insatisfechas:"
 msgid "Depende de "
 msgstr "Depende de "
 
-#, fuzzy
 msgid "mas não vai ser instalado."
 msgstr "pero no se instalará"
 
@@ -81,37 +79,37 @@ msgid "mas não está disponível"
 msgstr "pero no está disponible"
 
 msgid "Não é possível prosseguir com a instalação.<br><br>"
-msgstr "No se puede continuar con la instalación. <br><br>"
+msgstr "No se puede continuar con la instalación.<br><br>"
 
 msgid "Selecione um pacote .deb válido.<br><br>"
 msgstr "Seleccione un paquete .deb válido.<br><br>"
 
 msgid "Um ou mais pacotes já estavam instalados:"
-msgstr ""
+msgstr "Uno o más paquetes ya estaban instalados:"
 
 msgid "Pacotes selecionados para instalar:"
-msgstr ""
+msgstr "Paquetes seleccionados para instalar:"
 
 msgid "É preciso fazer o download de"
-msgstr ""
+msgstr "Necesitas descargar"
 
 msgid "Total de pacotes para instalar:"
-msgstr ""
+msgstr "Paquetes totales para instalar:"
 
 msgid "Total de pacotes a remover:"
-msgstr ""
+msgstr "Paquetes totales para eliminar:"
 
 msgid "Pacotes a atualizar:"
-msgstr ""
+msgstr "Paquetes para actualizar:"
 
 msgid "Dependencias a serem instaladas:"
-msgstr ""
+msgstr "Dependencias a instalar:"
 
 msgid "Pacotes a remover:"
-msgstr ""
+msgstr "Paquetes para eliminar:"
 
 msgid "Pacotes para atualizar:"
-msgstr ""
+msgstr "Paquetes para actualizar:"
 
 msgid "Instalar"
 msgstr "Instalar"
@@ -119,11 +117,9 @@ msgstr "Instalar"
 msgid "Reinstalar"
 msgstr "Reinstalar"
 
-#, fuzzy
 msgid "Aguarde. Instalando..."
 msgstr "Espera, instalando..."
 
-#, fuzzy
 msgid "Ocorreram erros. Confira:"
 msgstr "Hubo errores, mira:"
 
@@ -133,11 +129,9 @@ msgstr "Actualice la lista de paquetes (apt update)"
 msgid "Instalação concluída!"
 msgstr "Instalación completa!"
 
-#, fuzzy
 msgid "Aguarde. Atualizando lista de pacotes..."
 msgstr "Por favor espere, actualizando la lista de paquetes ..."
 
-#, fuzzy
 msgid ""
 "Concluída a atualização de lista de pacotes. Tente novamente instalar o "
 "pacote desejado."
