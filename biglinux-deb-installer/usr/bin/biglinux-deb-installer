@@ -54,7 +54,7 @@ rm -f /tmp/packages_info_big_uri.txt
 
 cd /usr/share/bigbashview/bcc/apps/biglinux-deb-installer/
 
-LANGUAGE=$BIGBASHVIEW_LANG GDK_BACKEND=x11 SDL_VIDEODRIVER=x11 QT_QPA_PLARFORM=xcb bigbashview -t qt -b 0,0,0 index.sh.htm -s 1050x600 -i icon.png
+LANGUAGE=$BIGBASHVIEW_LANG GDK_BACKEND=x11 SDL_VIDEODRIVER=x11 QT_QPA_PLARFORM=xcb bigbashview -t qt index.sh.htm -s 1050x600 -i icon.png
 
 IFS=$OIFS
 
